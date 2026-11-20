@@ -1,0 +1,8 @@
+Django
+djangorestframework
+django-unfold
+pillow
+requests
+python-dotenv
+gunicorn
+psycopg2-binary

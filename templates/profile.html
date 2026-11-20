@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profil | LightNews</title>
+    <meta name="description" content="LightNews — foydalanuvchi profili sahifasi.">
+    <meta property="og:title" content="Profil | LightNews">
+    <meta property="og:description" content="LightNews saytidagi shaxsiy profilingiz.">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+    <div class="topline">
+        <div class="container"><span><strong>THE DAILY EDITION</strong> &nbsp; · &nbsp; Mustaqil yangiliklar
+                nashri</span><span>11-NOYABR, 2026 &nbsp; / &nbsp; Toshkent</span></div>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-main">
+                <a class="brand" href="{% url 'home' %}">NEWSROOM<span>.</span><small>HAQIQAT. TAHLIL.
+                        PERSPEKTIVA.</small></a>
+                <nav class="nav">
+                    <a href="{% url 'home' %}">Bosh sahifa</a><a href="{% url 'news_list' %}">Yangiliklar</a><a
+                        href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'about' %}">Biz haqimizda</a><a
+                        href="{% url 'contact' %}">Aloqa</a>
+                </nav>
+                <div class="header-actions"><button class="icon-btn" data-search-toggle
+                        aria-label="Qidiruv">⌕</button>
+                    {% if user.is_authenticated %}
+                        <a class="btn btn-dark" href="{% url 'profile' %}">Profil ↗</a>
+                        <a class="btn btn-dark" href="{% url 'logout' %}">Chiqish ↗</a>
+                        {% else %}
+                        <a class="btn btn-dark" href="{% url 'login' %}">Kirish ↗</a>
+                    {% endif %}
+
+                    <button
+                        class="menu-toggle" aria-label="Menyu">☰</button></div>
+            </div>
+
+            <div class="search-panel">
+                <form action="{% url 'news_list' %}">
+                    <input name="q" placeholder="Yangiliklarni qidiring..." aria-label="Qidiruv">
+                    <button class="btn btn-primary">Qidirish</button></form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <div class="container">
+                <div class="eyebrow">FOYDALANUVCHI KABINETI</div>
+                <h1>Mening profilim<span style="color:var(--red)">.</span></h1>
+                <p>Shaxsiy ma’lumotlar, saqlangan yangiliklar va izohlaringizni boshqaring.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+
+                <div class="profile-grid">
+                    <aside class="profile-card">
+                        <div class="avatar">{{ user.first_name|slice:":1"}} </div>
+                        <h2 style="font:700 24px 'Playfair Display',serif;margin:0">{{ user.first_name }}</h2>
+                        <p style="font-size:12px;color:var(--muted)">{{ user.email }} · Foydalanuvchi</p>
+
+                        <div class="profile-menu"><a class="active" href="#">Profil ma’lumotlari</a>
+                            <a href="#saved">Saqlangan yangiliklar</a>
+                            <a href="#comments">Mening izohlarim</a>
+                            <a href="{% url 'logout' %}">Tizimdan chiqish ↗</a></div>
+                    </aside>
+                    <div>
+
+                        <div class="stat-grid">
+                            <div class="stat"><strong>{{ news_count }}</strong><small>Saqlangan yangilik</small></div>
+                            <div class="stat"><strong>{{ comments_count }}</strong><small>Yozilgan izoh</small></div>
+                            <div class="stat"><strong>0</strong><small>Obuna kategoriyasi</small></div>
+                        </div>
+
+                        <form class="form-card" method="post" action="{% url 'profile' %}" style="margin-top:20px">
+                            {% csrf_token %}
+                            <h2>Shaxsiy ma’lumotlar</h2>
+                            {% if error %}
+                            <div class="notice" style="display:block;background:#fdecea;color:#b3261e">{{ error }}</div>
+                            {% endif %}
+                            <div class="form-grid">
+                                <div class="field"><label>Ism familiya</label>
+                                    <input value="{{ user.first_name }}" name="name" type="name"></div>
+                                <div class="field"><label>Username</label>
+                                    <input value="{{ user.username }}" name="username" type="text"></div>
+                            </div>
+                            <div class="field"><label>Email</label>
+                                <input type="email" name="email" value="{{ user.email }}"></div>
+                            <button class="btn btn-primary">O‘zgarishlarni saqlash</button>
+                        </form>
+
+                    <form class="form-card" method="post" action="{% url 'change_password' %}" style="margin-top:20px">
+                        {% csrf_token %}
+                        <h2>Parolni almashtirish</h2>
+                        {% if messages %}
+                            {% for message in messages %}
+                                {% if message.tags == 'error' %}
+                                    <div class="notice" style="display:block;background:#fdecea;color:#b3261e">{{ message }}</div>
+                                {% else %}
+                                    <div class="notice" style="display:block">{{ message }}</div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+
+    <div class="field"><label>Joriy parol</label>
+        <input type="password" name="old_password" required></div>
+    <div class="form-grid">
+        <div class="field"><label>Yangi parol</label>
+            <input type="password" name="new_password1" required minlength="8"></div>
+        <div class="field"><label>Yangi parolni tasdiqlang</label>
+            <input type="password" name="new_password2" required minlength="8"></div>
+    </div>
+    <button class="btn btn-primary">Parolni yangilash</button>
+</form>
+
+                        <div id="saved" class="side-panel" style="margin-top:20px">
+                            <h3>Saqlangan yangiliklar</h3>
+                            {% for sn in savednews %}
+                            <article class="news-card" data-category="{{ sn.news.category.name|lower }}"><a href="{% url 'article_detail' sn.news.slug %}">
+                            <div class="card-image"><img
+                                    src="{{ sn.news.img.url}}"
+                                    alt="{{ sn.news.title }}"></div>
+                        </a>
+                        <div class="card-body">
+                            <div class="card-meta"><span class="tag">{{ sn.news.category.name|upper }}</span><span>{{ sn.news.published_at|date:"d.m.Y" }}</span></div>
+                            <h3 class="card-title"><a href="{% url 'article_detail' sn.news.slug %}">{{ sn.news.title}}</a></h3>
+                            <p class="card-desc">{{ sn.news.short_description}}</p>
+                            <div class="card-foot"><span>◉ {{ sn.news.views_count}} · {{ sn.news.author.username|default:"Tahririyat"}}</span><button class="bookmark"
+                                    data-bookmark aria-label="Saqlash">♡</button></div>
+                        </div>
+                    </article>
+                            {% empty %}
+                        <p>Hozircha yangilik yo‘q.</p>
+                    {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">NEWSROOM<span>.</span></div>
+                    <p>Kun yangiliklari, chuqur tahlil va jamiyatdagi muhim voqealar — barchasi bir joyda.</p>
+                </div>
+                <div>
+                    <h4>Bo‘limlar</h4>
+                    <div class="footer-links"><a href="{% url 'news_list' %}">So‘nggi yangiliklar</a><a
+                            href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'news_list' %}">Eng mashhurlar</a></div>
+                </div>
+                <div>
+                    <h4>Nashr</h4>
+                    <div class="footer-links"><a href="{% url 'about' %}">Biz haqimizda</a><a
+                            href="{% url 'contact' %}">Bog‘lanish</a><a href="{% url 'login' %}">Shaxsiy kabinet</a></div>
+                </div>
+                <div>
+                    <h4>Yangiliklardan xabardor bo‘ling</h4>
+                    <form data-newsletter><input class="search-inline" type="email" required
+                            placeholder="Email manzilingiz"><button class="btn btn-primary" style="margin-top:9px">Obuna
+                            bo‘lish</button>
+                        <p data-newsletter-note hidden></p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 NEWSROOM. Barcha huquqlar himoyalangan.</span><span>Mas’uliyatli
+                    jurnalistika · Ochiq axborot</span></div>
+        </div>
+    </footer>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bosh sahifa | LightNews</title>
+    <meta name="description" content="LightNews — O‘zbekiston va dunyo yangiliklari, tahlil va maqolalar.">
+    <meta property="og:title" content="Bosh sahifa | LightNews">
+    <meta property="og:description" content="LightNewsda O'zbekiston va dunyo yangiliklari.">
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+    <div class="topline">
+        <div class="container"><span><strong>THE DAILY EDITION</strong> &nbsp; · &nbsp; Mustaqil yangiliklar
+                nashri</span><span>11-NOYABR, 2026 &nbsp; / &nbsp; Toshkent</span></div>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-main">
+                <a class="brand" href="{% url 'home' %}">
+                    {% if hero_blog %}
+                        {{ hero_blog.title }}<span>.</span>
+                        <small>{{ hero_blog.subtitle }}</small>
+                    {% else %}
+                        NEWSROOM<span>.</span>
+                        <small>HAQIQAT. TAHLIL. PERSPEKTIVA.</small>
+                    {% endif %}
+                </a>
+                <nav class="nav">
+                    <a href="{% url 'home' %}" class="active">Bosh sahifa</a><a href="{% url 'news_list' %}">Yangiliklar</a><a
+                        href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'about' %}">Biz haqimizda</a><a
+                        href="{% url 'contact' %}">Aloqa</a>
+                </nav>
+                <div class="header-actions"><button class="icon-btn" data-search-toggle
+                        aria-label="Qidiruv">⌕</button>
+                    {% if user.is_authenticated %}
+                        <a class="btn btn-dark" href="{% url 'profile' %}">Profil ↗</a>
+                        <a class="btn btn-dark" href="{% url 'logout' %}">Chiqish ↗</a>
+                    {% else %}
+                    <a class="btn btn-dark" href="{% url 'login' %}">Kirish ↗</a>
+                    {% endif %}
+                    <button
+                        class="menu-toggle" aria-label="Menyu">☰</button></div>
+            </div>
+            <div class="search-panel">
+                <form action="{% url 'news_list' %}">
+                    <input name="q" placeholder="Yangiliklarni qidiring..." aria-label="Qidiruv">
+                    <button class="btn btn-primary">Qidirish</button></form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+<section class="hero">
+    <div class="container">
+
+        {% if hero_blog %}
+        <div class="eyebrow">{{ hero_blog.main_category }}</div>
+
+        <h1 class="hero-title">
+            {{ hero_blog.title }}<span>.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            {{ hero_blog.subtitle }}
+        </p>
+
+        <div class="hero-meta">
+            {{ hero_blog.short_description }}
+        </div>
+        {% endif %}
+
+        <div class="hero-grid">
+
+            {% if hero_blog %}
+            <div class="hero-copy">
+                <p>{{ hero_blog.description }}</p>
+
+                <a class="btn btn-primary" href="{% url 'news_list' %}">
+                    Barcha yangiliklar ↗
+                </a>
+            </div>
+            {% endif %}
+
+            {% if featured %}
+            <a class="hero-photo"
+               href="{% url 'article_detail' featured.slug %}">
+
+                <img src="{{ featured.img.url }}"
+                     alt="{{ featured.title }}">
+
+                <div class="photo-label">
+                    <span class="tag">
+                        {{ featured.category.name }}
+                    </span>
+
+                    <h2>{{ featured.title }}</h2>
+
+                    <span>
+                        {{ featured.published_at|date:"d.m.Y" }}
+                        · {{ featured.views_count }} ko‘rish
+                    </span>
+                </div>
+            </a>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+        <div class="feature-strip">
+            <div class="container feature-items">
+                <div class="feature-item">
+                    <div class="feature-icon">▤</div>
+                    <div><strong>Dolzarb xabarlar</strong><small>Eng muhim voqealar bir joyda</small></div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">◎</div>
+                    <div><strong>Chuqur tahlil</strong><small>Faktlar va ekspert qarashlari</small></div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">↗</div>
+                    <div><strong>Tezkor axborot</strong><small>Yangiliklardan ortda qolmang</small></div>
+                </div>
+            </div>
+        </div>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <div class="section-kicker">Tahririyat tanlovi</div>
+                        <h2 class="section-title">So‘nggi yangiliklar</h2>
+                    </div><a class="text-link" href="{% url 'news_list' %}">Barchasini ko‘rish →</a>
+                </div>
+
+                <div class="cards">
+                    {% for n in latest %}
+                    <article class="news-card" data-category="{{ n.category.name|lower }}"><a href="{% url 'article_detail' n.slug %}">
+                            <div class="card-image">
+                                {% if n.img %}
+                                <img
+                                    src="{{ n.img.url}}"
+                                    alt="{{ n.title }}">
+                                {% endif %}
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <div class="card-meta"><span class="tag">{{ n.category.name|upper }}</span><span>{{ n.published_at|date:"d.m.Y" }}</span></div>
+                            <h3 class="card-title"><a href="{% url 'article_detail' n.slug %}">{{ n.title}}</a></h3>
+                            <p class="card-desc">{{ n.short_description}}</p>
+                            <div class="card-foot"><span>◉ {{ n.views_count}} · {{ n.author.username|default:"Tahririyat"}}</span><button class="bookmark"
+                                    data-bookmark aria-label="Saqlash">♡</button></div>
+                        </div>
+                    </article>
+                            {% empty %}
+                        <p>Hozircha yangilik yo‘q.</p>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </section>
+        <section class="section">
+            <div class="container split">
+                <div>
+                    <div class="section-head">
+                        <div>
+                            <div class="section-kicker">Ko‘p o‘qilayotgan</div>
+                            <h2 class="section-title">Kun mavzulari</h2>
+                        </div>
+                    </div>
+                    <div class="cards">
+
+                        {% for t in topics %}
+                        <article class="news-card" data-category="{{ t.category.name|lower }}"><a href="{% url 'article_detail' t.slug %}">
+                                <div class="card-image"><img
+                                        src="{{ t.img.url }}"
+                                        alt="{{ t.title }}"></div>
+                            </a>
+                            <div class="card-body">
+                                <div class="card-meta"><span class="tag">{{ t.category.name|upper }}</span><span>{{ t.published_at|date:"d.m.Y"}}</span></div>
+
+                                <h3 class="card-title"><a href="{% url 'article_detail' t.slug %}">{{ t.title }}</a></h3>
+                                <p class="card-desc">{{ t.short_description }}</p>
+                                <div class="card-foot"><span>◉ {{ t.views_count }} · {{ t.author.username|default:'Tahririyat' }}</span><button class="bookmark"
+                                        data-bookmark aria-label="Saqlash">♡</button></div>
+
+                            </div>
+                        </article>
+                            {% empty %}
+                                <p>Hozircha yangilik yo'q</p>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+
+                <aside class="side-panel">
+                    <h3>Eng mashhur</h3>
+                    {% for p in popular %}
+                    <a class="mini-story" href="{% url 'article_detail' p.slug %}">
+                        {% if p.img %}
+                        <img src="{{ p.img.url}}"
+                            alt="">
+                        {% endif %}
+                        <span><small>{{ p.category.name|upper }} · {{ p.published_at|date:"d.m.Y" }}</small><strong>{{ p.title}}</strong></span></a>
+                    {% endfor %}
+                </aside>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+              <div>
+                  {% if hero_blog %}
+        <div class="footer-brand">
+            {{ hero_blog.title }}<span>.</span>
+        </div>
+
+        <p>{{ hero_blog.subtitle }}</p>
+    {% endif %}
+</div>
+                <div>
+                    <h4>Bo‘limlar</h4>
+                    <div class="footer-links"><a href="{% url 'news_list' %}">So‘nggi yangiliklar</a><a
+                            href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'news_list' %}">Eng mashhurlar</a></div>
+                </div>
+                <div>
+                    <h4>Nashr</h4>
+                    <div class="footer-links"><a href="{% url 'about' %}">Biz haqimizda</a><a
+                            href="{% url 'contact' %}">Bog‘lanish</a><a href="{% url 'login' %}">Shaxsiy kabinet</a></div>
+                </div>
+                <div>
+                    <h4>Yangiliklardan xabardor bo‘ling</h4>
+                    <form data-newsletter><input class="search-inline" type="email" required
+                            placeholder="Email manzilingiz"><button class="btn btn-primary" style="margin-top:9px">Obuna
+                            bo‘lish</button>
+                        <p data-newsletter-note hidden></p>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom"><span>© 2026 NEWSROOM. Barcha huquqlar himoyalangan.</span><span>Mas’uliyatli
+                    jurnalistika · Ochiq axborot</span></div>
+        </div>
+    </footer>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+</body>
+
+</html>

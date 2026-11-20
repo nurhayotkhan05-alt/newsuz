@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yangiliklar | LightNews</title>
+    <<meta name="description" content="LightNews — O‘zbekiston va dunyodagi so‘nggi yangiliklar.">
+    <meta property="og:title" content="Yangiliklar | LightNews">
+    <meta property="og:description" content="LightNewsda eng so‘nggi yangiliklar va dolzarb xabarlar.">
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+
+<body>
+    <div class="topline">
+        <div class="container"><span><strong>THE DAILY EDITION</strong> &nbsp; · &nbsp; Mustaqil yangiliklar
+                nashri</span><span>11-NOYABR, 2026 &nbsp; / &nbsp; Toshkent</span></div>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-main"><a class="brand" href="{% url 'home' %}">NEWSROOM<span>.</span><small>HAQIQAT. TAHLIL.
+                        PERSPEKTIVA.</small></a>
+                <nav class="nav">
+                    <a href="{% url 'home' %}">Bosh sahifa</a>
+                    <a href="{% url 'news_list' %}" class="active">Yangiliklar</a><a
+                        href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'about' %}">Biz haqimizda</a><a
+                        href="{% url 'contact' %}">Aloqa</a>
+                </nav>
+
+                <div class="header-actions"><button class="icon-btn" data-search-toggle
+                        aria-label="Qidiruv">⌕</button>
+                    {% if user.is_authenticated  %}
+                        <a class="btn btn-dark" href="{% url 'profile' %}">Profil ↗</a>
+                        <a class="btn btn-dark" href="{% url 'logout' %}">Chiqish ↗</a>
+                        {% else %}
+                        <a class="btn btn-dark" href="{% url 'login' %}">Kirish ↗</a>
+                    {% endif %}
+                    <button
+                        class="menu-toggle" aria-label="Menyu">☰</button></div>
+            </div>
+
+            <div class="search-panel">
+                <form action="{% url 'news_list' %}">
+                    <input name="q" placeholder="Yangiliklarni qidiring.."
+                        aria-label="Qidiruv"><button class="btn btn-primary">Qidirish</button></form>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <div class="container">
+                <div class="eyebrow">NEWSROOM / NASHR</div>
+                <h1>Barcha yangiliklar<span style="color:var(--red)">.</span></h1>
+                <p>O‘zbekiston va dunyodagi eng so‘nggi voqealar. Kategoriya bo‘yicha saralang yoki kerakli mavzuni
+                    qidiring.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="toolbar">
+
+                    <div class="filters" data-filter-group>
+                    <a class="filter-btn {% if not active_slug %}active{% endif %}"
+                       href="{% url 'news_list' %}">Barchasi</a>
+
+                        {% for c in categories %}
+                            <a class="filter-btn {% if active_slug == c.slug %}active{% endif %}"
+                               href="{% url 'news_list' %}?category={{ c.slug }}">{{ c.name }}</a>
+                        {% endfor %}
+
+                    </div><input class="search-inline" data-news-search
+                        placeholder="Yangilik qidirish...">
+                </div>
+
+                <div class="cards">
+                    {% for n in news %}
+
+                    <article class="news-card" data-category="{{ n.category.name|lower }}"><a href="{% url 'article_detail' n.slug %}">
+                            <div class="card-image">
+                                {% if n.img %}
+                                <img src="{{ n.img.url }}"
+                                    alt="{{ n.title }}">
+                            {% endif %}
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <div class="card-meta"><span class="tag">{{ n.category.name }}</span><span>{{ n.published_at|date:'d.m.Y' }}</span></div>
+                            <h3 class="card-title"><a href="{% url 'article_detail' n.slug  %}">{{ n.title }}</a></h3>
+                            <p class="card-desc">{{ n.short_description }}</p>
+                            <div class="card-foot"><span>◉ {{ n.views_count}} · {{ n.author.username }}</span><button class="bookmark"
+                                    data-bookmark aria-label="Saqlash">♡</button></div>
+                        </div>
+                    </article>
+                        {% empty %}
+                        <p>Hozircha yangilik yo‘q.</p>
+                    {% endfor %}
+
+
+                </div>
+
+                {% if page_obj.paginator.num_pages > 1 %}
+                    <div class="pagination">
+                        {% if page_obj.has_previous %}
+                            <a href="?page={{ page_obj.previous_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}{% if active_slug %}&category={{ active_slug }}{% endif %}"><button>←</button></a>
+
+                        {% endif %}
+                        {% for num in page_obj.paginator.page_range %}
+                            <a href="?page={{ num }}{% if q %}&q={{ q|urlencode }}{% endif %}{% if active_slug %}&category={{ active_slug }}{% endif %}">
+                                <button class="{% if num == page_obj.number %}active{% endif %}">{{ num }}</button>
+                            </a>
+                        {% endfor %}
+                        {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}{% if active_slug %}&category={{ active_slug }}{% endif %}"><button>→</button></a>
+                        {% endif %}
+                    </div>
+                      {% endif %}
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">NEWSROOM<span>.</span></div>
+                    <p>Kun yangiliklari, chuqur tahlil va jamiyatdagi muhim voqealar — barchasi bir joyda.</p>
+                </div>
+                <div>
+                    <h4>Bo‘limlar</h4>
+                    <div class="footer-links"><a href="{% url 'news_list' %}">So‘nggi yangiliklar</a><a
+                            href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'news_list' %}">Eng mashhurlar</a></div>
+                </div>
+                <div>
+                    <h4>Nashr</h4>
+                    <div class="footer-links"><a href="{% url 'about' %}">Biz haqimizda</a><a
+                            href="{% url 'contact' %}">Bog‘lanish</a><a href="{% url 'login' %}">Shaxsiy kabinet</a></div>
+                </div>
+                <div>
+                    <h4>Yangiliklardan xabardor bo‘ling</h4>
+
+                    <form data-newsletter><input class="search-inline" type="email" required
+                            placeholder="Email manzilingiz"><button class="btn btn-primary" style="margin-top:9px">Obuna
+                            bo‘lish</button>
+                        <p data-newsletter-note hidden></p>
+                    </form>
+
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 NEWSROOM. Barcha huquqlar himoyalangan.</span><span>Mas’uliyatli
+                    jurnalistika · Ochiq axborot</span></div>
+        </div>
+    </footer>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+</body>
+
+</html>

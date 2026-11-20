@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ news.title }}</title>
+    <meta name="description" content="{{ news.short_description }}">
+    <meta property="og:title" content="{{ news.title }}">
+    <meta property="og:description" content="{{ news.short_description}}">
+    {% if news.img %}
+        <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ news.img.url }}">
+{% endif %}
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+    <div class="topline">
+        <div class="container"><span><strong>THE DAILY EDITION</strong> &nbsp; · &nbsp; Mustaqil yangiliklar
+                nashri</span><span>11-NOYABR, 2026 &nbsp; / &nbsp; Toshkent</span></div>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-main">
+                <a class="brand" href="{% url 'home' %}">NEWSROOM<span>.</span><small>HAQIQAT. TAHLIL.
+                        PERSPEKTIVA.</small></a>
+                <nav class="nav">
+                    <a href="{% url 'home' %}">Bosh sahifa</a><a href="{% url 'news_list' %}">Yangiliklar</a><a
+                        href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'about' %}">Biz haqimizda</a><a
+                        href="{% url 'contact' %}">Aloqa</a>
+                </nav>
+                <div class="header-actions"><button class="icon-btn" data-search-toggle
+                        aria-label="Qidiruv">⌕</button>
+                    {% if user.is_authenticated %}
+                        <a class="btn btn-dark" href="{% url 'profile' %}">Profil ↗</a>
+                        <a class="btn btn-dark" href="{% url 'logout' %}">Chiqish ↗</a>
+                    {% else %}
+                        <a class="btn btn-dark" href="{% url 'login' %}">Kirish ↗</a>
+                    {% endif %}
+                    <button
+                        class="menu-toggle" aria-label="Menyu">☰</button></div>
+            </div>
+            <div class="search-panel">
+                <form action="{% url 'news_list' %}">
+                    <input name="q" placeholder="Yangiliklarni qidiring..." aria-label="Qidiruv">
+                    <button class="btn btn-primary">Qidirish</button></form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container article-layout">
+
+            <article>
+                <div class="article-head">
+                    <div class="eyebrow">{{ news.category.name|upper }}</div>
+                    <h1>{{ news.title }}</h1>
+                    <p class="article-lead">{{ news.short_description }}</p>
+                    <div class="article-byline"><span>✍ {{ news.author.username|default:"Tahriyat"}}</span><span>{{ news.published_at|date:"d.m.Y"}}</span><span>◉
+                            {{ news.views_count }}</span></div>
+                </div>
+            {% if news.img %}
+                <img class="article-cover"
+                    src="{{ news.img.url }}"
+                    alt="{{ news.title }}">
+            {% endif %}
+                <div class="article-content">
+                    {{ news.body|linebreaks }}
+                </div>
+                <div class="article-tags">
+                    {% for t in news.tags.all %}
+                        <span class="tag">#{{ t.name }}</span>
+                    {% endfor %}
+                </div>
+
+                <div class="share-row"><button data-share>Ulashish ↗</button>
+
+                {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'toggle_saved_news' news.id %}">
+                        {% csrf_token %}
+                        <button>
+                            {% if is_saved %}Saqlangan{% else %}Saqla{% endif %}
+
+                        </button>
+                     </form>
+                    {% else %}
+                     <a href="{% url 'login' %}">Saqlash</a>
+
+                {% endif %}
+
+
+                    <button onclick="window.print()">Chop etish</button></div>
+                <div class="comment-box">
+
+                    <h3>Izoh qoldirish</h3>
+
+                    {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'add_comment' news.id %}">
+                        {% csrf_token %}
+                        <div class="field"><label>Izohingiz</label>
+                            <textarea name="comment" required
+                                placeholder="Fikringizni yozing..."></textarea></div><button
+                            class="btn btn-primary">Yuborish</button>
+                        <div class="notice"></div>
+                    </form>
+                        {% else %}
+                        <p style="color:var(--muted);font-size:13px">Izoh qoldirish uchun
+                            <a href="{% url 'login' %}">Tizimga kiring</a>.
+                        </p>
+                    {% endif %}
+
+                {% for c in comments %}
+                <div class="comment-item" style="border-top:1px solid #eee;padding:12px 0">
+                    <strong>{{ c.author.username }}</strong>
+                    <small style="color:var(--muted);margin-left:8px">{{ c.created_at|date:"d.m.Y H:i" }}</small>
+                    <p style="margin-top:6px">{{ c.comment }}</p>
+                </div>
+                    {% empty %}
+                    <p>Hozircha commentlar yo'q</p>
+                {% endfor %}
+
+                </div>
+            </article>
+
+
+           <aside>
+               <div class="side-panel">
+                   <h3>O‘xshash yangiliklar</h3>
+                   {% for r in related %}
+                       <a class="mini-story" href="{% url 'article_detail' r.slug %}">
+                           <img src="{{ r.img.url }}" alt="{{ r.title }}">
+                           <span><small>{{ r.category.name|upper }}</small>
+                               <strong>{{ r.title }}</strong></span>
+                       </a>
+        {% empty %}
+        <p>Hozircha o‘xshash yangilik yo‘q.</p>
+        {% endfor %}
+    </div>
+</aside>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">NEWSROOM<span>.</span></div>
+                    <p>Kun yangiliklari, chuqur tahlil va jamiyatdagi muhim voqealar — barchasi bir joyda.</p>
+                </div>
+                <div>
+                    <h4>Bo‘limlar</h4>
+                    <div class="footer-links"><a href="{% url 'news_list' %}">So‘nggi yangiliklar</a><a
+                            href="{% url 'categories' %}">Kategoriyalar</a><a href="{% url 'news_list' %}">Eng mashhurlar</a></div>
+                </div>
+                <div>
+                    <h4>Nashr</h4>
+                    <div class="footer-links"><a href="{% url 'about' %}">Biz haqimizda</a><a
+                            href="{% url 'contact' %}">Bog‘lanish</a><a href="{% url 'login' %}">Shaxsiy kabinet</a></div>
+                </div>
+                <div>
+                    <h4>Yangiliklardan xabardor bo‘ling</h4>
+                    <form data-newsletter><input class="search-inline" type="email" required
+                            placeholder="Email manzilingiz"><button class="btn btn-primary" style="margin-top:9px">Obuna
+                            bo‘lish</button>
+                        <p data-newsletter-note hidden></p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 NEWSROOM. Barcha huquqlar himoyalangan.</span><span>Mas’uliyatli
+                    jurnalistika · Ochiq axborot</span></div>
+        </div>
+    </footer>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+</body>
+
+</html>

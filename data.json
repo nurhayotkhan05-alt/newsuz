@@ -1,0 +1,2153 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-11-12T10:30:46.285Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Gunmaaster G9 treyleri e’lon qilindi: Emraan Hashmi va Genelia bir kadrda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-11-12T10:35:41.452Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Valyuta kursi: nimalarga e’tibor berish kerak",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-11-12T10:38:11.303Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Futbol olamida haftaning asosiy mavzulari",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-11-12T10:39:36.805Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Sun’iy intellekt kundalik ishni qanday o’zgartirmoqda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-11-12T10:41:56.862Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Yosh ijodkorlar uchun musiqa va san’atda yangi imkoniyatlar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-11-12T10:43:58.216Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Kichik biznes uchun moliyaviy savodxonlik bo’yicha maslahatlar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-11-12T10:45:28.405Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Valyuta kursi: nimalarga e’tibor berish kerak",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-11-12T10:47:36.228Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Shah Rukh Khanning “King” filmi 24-dekabrda ekranlarga chiqadi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-11-13T05:28:34.887Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Maatrubhumi: May War Rest in Peace",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-11-13T05:41:00.918Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Eng so'nggi habarlar | Bollywood  olami",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-11-14T10:53:27.215Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Gunmaaster G9 treyleri e’lon qilindi: Emraan Hashmi va Genelia bir kadrda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-11-16T03:26:46.273Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "nurhayot_khan - Gunmaaster G9 treyleri e’lon qilindi: Emraan Hashmi va Genelia bir kadrda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-11-16T04:35:24.884Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "nurhayot_khan - Maatrubhumi: May War Rest in Peace",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-11-16T06:50:46.420Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "nurhayot_khan - Shah Rukh Khanning “King” filmi 24-dekabrda ekranlarga chiqadi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-11-16T06:53:44.525Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "riteishd - Maatrubhumi: May War Rest in Peace",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-11-16T07:24:02.072Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "riteishd - Yosh ijodkorlar uchun musiqa va san’atda yangi imkoniyatlar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-11-16T07:24:17.275Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "riteishd - Toshkentda yangi metro bekati ochildi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-11-17T05:16:12.667Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Yevropa Ittifoqi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-11-17T05:16:56.591Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Ruanda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-11-17T05:17:22.252Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "Yevropa Ittifoqi Ruandada migrantlar uchun markaz ochmoqchi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-11-17T05:17:38.755Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "Yevropa Ittifoqi Ruandada migrantlar uchun markaz ochmoqchi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-11-17T05:18:49.577Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "Yevropa Ittifoqi Ruandada migrantlar uchun markaz ochmoqchi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-11-17T05:19:47.374Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "SpaceX",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-11-17T05:20:34.441Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Starshipv",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-11-17T05:21:12.627Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Ilon Mask",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-11-17T05:21:37.164Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "kosmos",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-11-17T05:23:39.731Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "Ilon Mask 70 metrlik yangi Starship haqida ma'lumot berdi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-11-17T05:24:24.728Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "NASA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-11-17T05:24:45.472Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Voyajer",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-11-17T05:27:02.826Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Mirziyoyev Ummonning yirik kompaniyalari rahbarlari bilan uchrashdi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-11-17T05:27:27.888Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Ummon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-11-17T05:27:49.887Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Investitsiya",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-11-17T05:28:16.921Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Hamkorlik",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-11-17T05:29:06.092Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Mirziyoyev Ummonning yirik kompaniyalari rahbarlari bilan uchrashdi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-11-17T05:29:32.356Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Kino",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-11-17T05:29:51.248Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "James Bond",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-11-17T05:30:30.107Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "Robert Pattinson",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-11-17T05:34:33.425Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "Robert Pattinson yangi Jeyms Bond bo'ladi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-11-17T05:35:37.315Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "29",
+    "object_repr": "Maktab",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-11-17T05:35:58.374Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "30",
+    "object_repr": "Sport",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-11-17T05:36:19.158Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "31",
+    "object_repr": "Qator",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-11-17T05:38:02.375Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "14",
+    "object_repr": "Har bir maktabda kamida bitta sport to'garagi ochiladi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2026-11-17T05:38:28.166Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "32",
+    "object_repr": "sog'liq",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2026-11-17T05:38:51.710Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "33",
+    "object_repr": "ijtimoiy himoya",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2026-11-17T05:39:06.703Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "34",
+    "object_repr": "reabilitatsiya",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2026-11-17T05:40:55.565Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "Nogironligi bo'lganlar yiliga uch martagacha bepul reabilitatsiyadan o'tishi mumkin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2026-11-17T05:42:34.945Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "35",
+    "object_repr": "aholi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2026-11-17T05:42:59.225Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "36",
+    "object_repr": "statistika",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2026-11-17T05:44:57.029Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "16",
+    "object_repr": "O'zbekiston aholisi 16 yilda qariyb 10 millionga ko'paydi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2026-11-17T05:48:30.843Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "37",
+    "object_repr": "Ramayana",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2026-11-17T05:50:32.847Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "38",
+    "object_repr": "Kassa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2026-11-17T05:52:21.451Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "17",
+    "object_repr": "«Ramayana» kassada 12 kunda 790 crore rupiydan oshdi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2026-11-17T05:55:08.357Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "«Ramayana»ning ikkinchi qismi 2027-yil Divalida chiqadi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2026-11-17T06:02:51.423Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Mashhur Ramayana filmi O‘zbekiston kinoteatrlarida namoyish etilmoqda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2026-11-17T06:04:20.406Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Mashhur Ramayana filmi O‘zbekiston kinoteatrlarida namoyish etilmoqda",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\", \"Views count\", \"Published at\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2026-11-17T06:05:03.825Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Mashhur Ramayana filmi O‘zbekiston kinoteatrlarida namoyish etilmoqda",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2026-11-17T06:05:49.324Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Mashhur Ramayana filmi O‘zbekiston kinoteatrlarida namoyish etilmoqda",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2026-11-17T06:09:41.879Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "Nogironligi bo'lganlar yiliga uch martagacha bepul reabilitatsiyadan o'tishi mumkin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2026-11-17T06:10:23.654Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "Nogironligi bo'lganlar yiliga uch martagacha bepul reabilitatsiyadan o'tishi mumkin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2026-11-17T06:16:48.821Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "39",
+    "object_repr": "Hans Zimmer",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2026-11-17T06:17:18.983Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "40",
+    "object_repr": "A.R. Rahmon,",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2026-11-17T06:20:16.201Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "«Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2026-11-17T06:20:34.416Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "«Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2026-11-17T06:21:56.842Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "«Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2026-11-17T06:22:57.049Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Gunmaaster G9 treyleri e’lon qilindi: Emraan Hashmi va Genelia bir kadrda",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Views count\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2026-11-17T06:23:41.565Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Mashhur Ramayana filmi O‘zbekiston kinoteatrlarida namoyish etilmoqda",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2026-11-17T11:52:20.610Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "«Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Send to telegram\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2026-11-17T11:52:22.315Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "«Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2026-11-17T11:52:28.009Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "«Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2026-11-18T02:33:16.712Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "nurhayot_khan - Shah Rukh Khanning “King” filmi 24-dekabrda ekranlarga chiqadi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2026-11-18T02:33:31.628Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "riteishd - Mashhur Ramayana filmi O‘zbekiston kinoteatrlarida namoyish etilmoqda",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2026-11-18T02:54:56.845Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "riteishd - «Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$RN6CemyfRqr1aiGjvYZQdy$Vr12PU1mDUFkb35pNPL5I4ZHwoLE4Ro5m4KtkPa8XuU=",
+    "last_login": "2026-11-18T02:32:02.924Z",
+    "is_superuser": true,
+    "username": "riteishd",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-11-12T10:24:50.952Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$wHQSsIiUHP9zyj95w8E1Ih$3fC8vWwmgqnGcpRrKdpJtRtuEXjqe1+W4Xuo8r9HKsY=",
+    "last_login": "2026-11-19T02:25:23.636Z",
+    "is_superuser": false,
+    "username": "nurhayot_khan",
+    "first_name": "Nurhayot Khan",
+    "last_name": "",
+    "email": "nurhayotkhan05@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-11-13T05:11:52.482Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "03al0r3hqd62z5yxk24dqx1z1u7dwqt2",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYpIYtKYsTtvQDY2hbYCicBU9e8VEkO73p3uDR3v29jtxdZuUmjAw-WXCfdPmw-hD57vi-uXeVsncUfiTltcu6i9bmf7Nxi5jNAAeuvRUxSJVldZMHK6qpCRUo4BmVQrTNmzmkSfkIaYPVoKUg-BAny-3Es3ew:1xSo13:FSDZZ-Pg8nGyhxYnKLeHXbzhtMNpxQoBmtZhgenb2TU",
+    "expire_date": "2026-11-30T04:08:25.554Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2xem4jn9z8pss6i10brx2z471fiknuzx",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMAP_iGUWuk0DSkZ03VE7skAJqpaadEH9HlTrAene6Nwy8rXXYmi7DKNADwemXJc5PnXYhD57us8nztC5jMntiDtvMbRZ9XY_2b1C5VeiBgxN0bIuNZH1ipQ47pihoL8LETsmLR6Yc3LmUGBIGlz2qYlR2CT5f2gw35A:1xSBSd:VaIP25Zk9aUPdoJETydRDK_rg67EOuttNHb0ihhoRuc",
+    "expire_date": "2026-11-28T10:58:19.816Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "j045fij4o9t16ks9bxjlvzxyil497z26",
+  "fields": {
+    "session_data": "e30:1xRjZo:fQGPrVdmTm2_e5hiu4G-ccLJI4UWQva5McaNBvNmejs",
+    "expire_date": "2026-11-27T05:11:52.930Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jfcqe0fiu6xd8s747u4uurznopwi3kip",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYpIYtKYsTtvQDY2hbYCicBU9e8VEkO73p3uDR3v29jtxdZuUmjAw-WXCfdPmw-hD57vi-uXeVsncUfiTltcu6i9bmf7Nxi5jNAAeuvRUxSJVldZMHK6qpCRUo4BmVQrTNmzmkSfkIaYPVoKUg-BAny-3Es3ew:1xRjlg:60PU44AI5r0gE2LUEk73MIIKR81jH4J21lzeDH4c0Mw",
+    "expire_date": "2026-11-27T05:24:08.824Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lzotc87u5cowc9ure8ta8542jx1jny7n",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMAP_iGUWJ2yS4IztviJzYkAJqpaadEH9HlTrAene6NyTe1pq2pksaBQZAOP2yzOWp0y7kwdN9NmWe1mXMZk_MYZu5zqKvy9H-DSq3CgOQEw7oY-6t8JkIg0MrNw3oO46dd4wuknhSVsHihdWTYp-zpRACw-cLzms3ow:1xTrpz:repEwL7mlIC9_3uLPdbAwdTkInGpum5yCpToQ1TW00w",
+    "expire_date": "2026-12-03T02:25:23.640Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qc8h38may7repkm9ce2ghcmyyttsihrq",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSE8BmhduvcbyAwMUjU0Ke3K-O_apAvd3nPOfYmI21rj1nmJUxZnocXpdyNMD247yHdst1mmua3LRHJX5EG7vM6Zn5fD_Tuo2Ou3LuA4oAWVi9NIo3GKk_ZKQUnegicbXPaMuWgPtpgQaCDgwQajwI8k3h_dCDdv:1xTHjJ:q7q1zcmjoDNyzSXhNryCILWFQaa5OGg_VTqpfEGlPQQ",
+    "expire_date": "2026-12-01T11:52:05.657Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rp1zdfea25ulgoknelx5rnl8tsezvx8v",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYpIYtKYsTtvQDY2hbYCicBU9e8VEkO73p3uDR3v29jtxdZuUmjAw-WXCfdPmw-hD57vi-uXeVsncUfiTltcu6i9bmf7Nxi5jNAAeuvRUxSJVldZMHK6qpCRUo4BmVQrTNmzmkSfkIaYPVoKUg-BAny-3Es3ew:1xRjcA:-WDqTzt8Bscmyltkcq-lbVkHjCq-M4blHNjJYA57ERU",
+    "expire_date": "2026-11-27T05:14:18.331Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wyikadthudo9enn88h13depq2c3etklp",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAQAP9lz6Zh-6Ll6N1vaHa7raAGEgon478bEg56nZnMGxLt25j2VtY0CQyAcPllTPlZ5kPIg-b7ovIyb-vE6kjUaZu6LVJe17P9G4zURhiAuPamaB2NZ6tDzxyKC4RdqOiFUaRiFNtFVw362OsarfcZHecSrGb4fAHhnDew:1xTVSs:H1qE_EURil2nOG0NJKhVrcvCLgM3JDkf-c0AH6gzXwM",
+    "expire_date": "2026-12-02T02:32:02.928Z"
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 1,
+  "fields": {
+    "name": "Dunyo",
+    "slug": "dunyo",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 2,
+  "fields": {
+    "name": "Texnologiya",
+    "slug": "texnologiya",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 3,
+  "fields": {
+    "name": "Iqtisodiyot",
+    "slug": "iqtisodiyot",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 4,
+  "fields": {
+    "name": "Madaniyat",
+    "slug": "madaniyat",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 5,
+  "fields": {
+    "name": "Sport",
+    "slug": "sport",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 6,
+  "fields": {
+    "name": "Hayot tarzi",
+    "slug": "hayot-tarzi",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 7,
+  "fields": {
+    "name": "Mahalliy",
+    "slug": "mahalliy",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 8,
+  "fields": {
+    "name": "Siyosat",
+    "slug": "siyosat",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.category",
+  "pk": 9,
+  "fields": {
+    "name": "Bollywood",
+    "slug": "bollywood",
+    "description": ""
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 1,
+  "fields": {
+    "name": "AI",
+    "slug": "ai"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Dasturlash",
+    "slug": "dasturlash"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Dollar",
+    "slug": "dollar"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 4,
+  "fields": {
+    "name": "Bank",
+    "slug": "bank"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Biznes",
+    "slug": "biznes"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 6,
+  "fields": {
+    "name": "Futbol",
+    "slug": "futbol"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 7,
+  "fields": {
+    "name": "Boks",
+    "slug": "boks"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 8,
+  "fields": {
+    "name": "Musiqa",
+    "slug": "musiqa"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 9,
+  "fields": {
+    "name": "O'zbekiston",
+    "slug": "ozbekiston"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 10,
+  "fields": {
+    "name": "Bollywood",
+    "slug": "bollywood"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 11,
+  "fields": {
+    "name": "Emraan Hashmi",
+    "slug": "emraan-hashmi"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 12,
+  "fields": {
+    "name": "Genelia Deshmukh",
+    "slug": "genelia-deshmukh"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 13,
+  "fields": {
+    "name": "Shah Rukh Khan",
+    "slug": "shah-rukh-khan"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 14,
+  "fields": {
+    "name": "Riteish Deshmukh",
+    "slug": "riteish-deshmukh"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 15,
+  "fields": {
+    "name": "Yevropa Ittifoqi",
+    "slug": "yevropa_ittifoqi"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 16,
+  "fields": {
+    "name": "Ruanda",
+    "slug": "raunda"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 17,
+  "fields": {
+    "name": "SpaceX",
+    "slug": "spacex"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 18,
+  "fields": {
+    "name": "Starshipv",
+    "slug": "starshipv"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 19,
+  "fields": {
+    "name": "Ilon Mask",
+    "slug": "ilon_mask"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 20,
+  "fields": {
+    "name": "kosmos",
+    "slug": "kosmos"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 21,
+  "fields": {
+    "name": "NASA",
+    "slug": "nasa"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 22,
+  "fields": {
+    "name": "Voyajer",
+    "slug": "voyajer"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 23,
+  "fields": {
+    "name": "Ummon",
+    "slug": "ummon"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 24,
+  "fields": {
+    "name": "Investitsiya",
+    "slug": "investitsiya"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 25,
+  "fields": {
+    "name": "Hamkorlik",
+    "slug": "hamkorlik"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 26,
+  "fields": {
+    "name": "Kino",
+    "slug": "kino"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 27,
+  "fields": {
+    "name": "James Bond",
+    "slug": "james_bond"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 28,
+  "fields": {
+    "name": "Robert Pattinson",
+    "slug": "robert_pattinson"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 29,
+  "fields": {
+    "name": "Maktab",
+    "slug": "maktab"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 30,
+  "fields": {
+    "name": "Sport",
+    "slug": "sport"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 31,
+  "fields": {
+    "name": "Qator",
+    "slug": "qaror"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 32,
+  "fields": {
+    "name": "sog'liq",
+    "slug": "sogliq"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 33,
+  "fields": {
+    "name": "ijtimoiy himoya",
+    "slug": "ijtimoiy_himoya"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 34,
+  "fields": {
+    "name": "reabilitatsiya",
+    "slug": "reabilitatsiya"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 35,
+  "fields": {
+    "name": "aholi",
+    "slug": "aholi"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 36,
+  "fields": {
+    "name": "statistika",
+    "slug": "statistika"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 37,
+  "fields": {
+    "name": "Ramayana",
+    "slug": "ramyana"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 38,
+  "fields": {
+    "name": "Kassa",
+    "slug": "kassa"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 39,
+  "fields": {
+    "name": "Hans Zimmer",
+    "slug": "hans_zimmer"
+  }
+},
+{
+  "model": "newsuz.tag",
+  "pk": 40,
+  "fields": {
+    "name": "A.R. Rahmon,",
+    "slug": "a_r_rahman"
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 1,
+  "fields": {
+    "title": "Gunmaaster G9 treyleri e’lon qilindi: Emraan Hashmi va Genelia bir kadrda",
+    "slug": "gunmaastergunmaaster-g9-treyleri-elon-qilindi",
+    "short_description": "Emraan Hashmi va Genelia Deshmukh ishtirokidagi “Gunmaaster G9” filmining treyleri chorshanba kuni Punedagi katta tadbirda taqdim etildi.",
+    "body": "Film 1979-yildagi hind josuslik klassikasi “Surakksha”dan ilhomlangan, o’sha filmda Gunmaster G9 rolini Mithun Chakraborty o’ynagan. Filmning musiqasini Himesh Reshammiya yozgan. Rejissyor Aditya Datt, salbiy qahramonni Aparshakti Khurrana ijro etadi. Hashmi bu rol uchun jang san’ati va qurol bilan ishlash bo’yicha uzoq tayyorgarlik ko’rgan. Filmning prokatga chiqish sanasi 27-noyabr deb e’lon qilingan.",
+    "img": "images/images_7_BB7PHDA.jpg",
+    "category": 9,
+    "author": 1,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 140,
+    "created_at": "2026-11-12T10:30:46.281Z",
+    "updated_at": "2026-11-17T06:22:57.045Z",
+    "published_at": "2026-11-12T10:30:46Z",
+    "send_to_telegram": false,
+    "tags": [
+      10,
+      11,
+      12
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 2,
+  "fields": {
+    "title": "Valyuta kursi: nimalarga e’tibor berish kerak",
+    "slug": "valyuta-kursi-nimalarga-etibor-berish-kerak",
+    "short_description": "Valyuta kursi kundalik hayotga qanday ta’sir qiladi va uni kuzatishda qaysi omillarni bilish foydali.",
+    "body": "Valyuta kursi bozordagi talab va taklif, tashqi savdo hajmi hamda markaziy bank siyosati kabi bir nechta omilga bog’liq. Oddiy foydalanuvchi uchun eng muhimi rasmiy manbalarni kuzatib borish va shoshilinch qaror qabul qilmaslikdir. Mutaxassislar jamg’armani bir valyutada saqlamaslikni tavsiya qiladi.",
+    "img": "images/images_9.jpg",
+    "category": 3,
+    "author": 1,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 0,
+    "created_at": "2026-11-12T10:35:41.450Z",
+    "updated_at": "2026-11-12T10:45:28.402Z",
+    "published_at": "2026-11-12T10:35:41.450Z",
+    "send_to_telegram": false,
+    "tags": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 3,
+  "fields": {
+    "title": "Futbol olamida haftaning asosiy mavzulari",
+    "slug": "futbol-olamida-haftaning-asosiy-mavzulari",
+    "short_description": "Futbol muxlislari uchun hafta davomida muhokama qilinadigan asosiy mavzular va kutilayotgan o’yinlar sharhi.",
+    "body": "Har hafta futbol olamida jamoalar tarkibi, o’yin taktikasi va musobaqa jadvali haqida ko’plab muhokamalar bo’ladi. Muxlislar uchun eng qiziqarlisi yosh futbolchilarning rivoji va milliy jamoa tayyorgarligi hisoblanadi. Tahlilchilar jamoalarning o’yin uslubiga alohida e’tibor berishni tavsiya qiladi.",
+    "img": "images/images_10.jpg",
+    "category": 5,
+    "author": 1,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 0,
+    "created_at": "2026-11-12T10:38:11.301Z",
+    "updated_at": "2026-11-12T10:38:11.301Z",
+    "published_at": "2026-11-12T10:38:11.301Z",
+    "send_to_telegram": false,
+    "tags": [
+      6,
+      9
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 4,
+  "fields": {
+    "title": "Sun’iy intellekt kundalik ishni qanday o’zgartirmoqda",
+    "slug": "suniy-intellekt-kundalik-ishni-qanday-ozgartirmoqd",
+    "short_description": "Sun’iy intellekt vositalari matn yozish, tarjima va dasturlash kabi ishlarni osonlashtirmoqda.",
+    "body": "Sun’iy intellekt ko’plab sohada vaqtni tejash uchun ishlatilmoqda, jumladan matn tayyorlash, tarjima va kod yozishda. Mutaxassislarning fikricha, bu vositalar insonning o’rnini bosmaydi, balki takroriy ishlarni yengillashtiradi. Ulardan foydalanishda natijani doim tekshirish muhim.",
+    "img": "images/images_11.jpg",
+    "category": 2,
+    "author": 1,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 4,
+    "created_at": "2026-11-12T10:39:36.803Z",
+    "updated_at": "2026-11-12T10:39:36.803Z",
+    "published_at": "2026-11-12T10:39:36.803Z",
+    "send_to_telegram": false,
+    "tags": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 5,
+  "fields": {
+    "title": "Yosh ijodkorlar uchun musiqa va san’atda yangi imkoniyatlar",
+    "slug": "yosh-ijodkorlar-uchun-musiqa-va-sanatda-yangi-imko",
+    "short_description": "Raqamli platformalar yosh musiqachi va rassomlarga o’z ijodini keng auditoriyaga ko’rsatish imkonini bermoqda.",
+    "body": "Internet va ijtimoiy tarmoqlar yosh ijodkorlarga o’z ishlarini bevosita tomoshabinga yetkazish imkonini beradi. Shu bilan birga an’anaviy san’at turlariga qiziqish ham saqlanib qolmoqda. Ijodkorlar zamonaviy va milliy uslublarni uyg’unlashtirishga harakat qilmoqda.",
+    "img": "images/images_13.jpg",
+    "category": 4,
+    "author": 1,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 13,
+    "created_at": "2026-11-12T10:41:56.860Z",
+    "updated_at": "2026-11-12T10:41:56.860Z",
+    "published_at": "2026-11-12T10:41:56.860Z",
+    "send_to_telegram": false,
+    "tags": [
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 6,
+  "fields": {
+    "title": "Kichik biznes uchun moliyaviy savodxonlik bo’yicha maslahatlar",
+    "slug": "kichik-biznes-uchun-moliyaviy-savodxonlik-boyicha",
+    "short_description": "Yangi boshlagan tadbirkorlar uchun xarajatlarni rejalashtirish va bank xizmatlaridan to’g’ri foydalanish bo’yicha oddiy tavsiyalar.",
+    "body": "Biznesni boshlashda eng muhim qadam daromad va xarajatlarni alohida yuritishdir. Bank xizmatlari, jumladan kredit va hisob raqami shartlarini oldindan o’rganish foydali. Mutaxassislar xarajatlarning bir qismini favqulodda holatlar uchun zaxirada saqlashni maslahat beradi.",
+    "img": "images/images_14.jpg",
+    "category": 7,
+    "author": 1,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 0,
+    "created_at": "2026-11-12T10:43:58.214Z",
+    "updated_at": "2026-11-12T10:43:58.214Z",
+    "published_at": "2026-11-12T10:43:58.214Z",
+    "send_to_telegram": false,
+    "tags": [
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 7,
+  "fields": {
+    "title": "Shah Rukh Khanning “King” filmi 24-dekabrda ekranlarga chiqadi",
+    "slug": "shah-rukh-khan-king-filmi-24-dekabrda-chiqadi",
+    "short_description": "Shah Rukh Khan ishtirokidagi “King” filmi 2026-yil 24-dekabrda kinoteatrlarda namoyish etilishi e’lon qilindi.",
+    "body": "Film Siddharth Anand rejissyorligida suratga olingan, bosh rolda Shah Rukh Khan, shuningdek Suhana Khan, Deepika Padukone, Abhishek Bachchan va Anil Kapoor kabi aktyorlar ishtirok etadi. Filmni Red Chillies Entertainment va Marflix Pictures ishlab chiqargan. Shah Rukh Khan filmning chiqish sanasi o’zgarmasligini tasdiqlagan. “King” aktyorning ikki yillik tanaffusdan keyin kinoga qaytishi bo’ladi.",
+    "img": "images/images_15.jpg",
+    "category": 9,
+    "author": 1,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 20,
+    "created_at": "2026-11-12T10:47:36.226Z",
+    "updated_at": "2026-11-12T10:47:36.226Z",
+    "published_at": "2026-11-12T10:47:36.226Z",
+    "send_to_telegram": false,
+    "tags": [
+      10,
+      13
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 8,
+  "fields": {
+    "title": "Maatrubhumi: May War Rest in Peace",
+    "slug": "maatrubhumi-may-war-rest-in-peace",
+    "short_description": "Salman Khan ishtirokidagi yangi jangari va vatanparvarlik filmi 2026-yil 4-dekabrda kinoteatrlarda namoyish etiladi.",
+    "body": "# Salman Khanning yangi filmi — Maatrubhumi: May War Rest in Peace\r\n\r\nBollywood yulduzi Salman Khan o‘zining yangi filmi bilan muxlislarini xursand qilmoqda. Film **Maatrubhumi: May War Rest in Peace** deb nomlanadi.\r\n\r\n### Film haqida\r\n\r\nFilm rejissyori Apoorva Lakhia. Unda Salman Khan harbiy ofitser obrazini gavdalantiradi. Film 2020-yilda Galwan vodiysida sodir bo‘lgan Hindiston va Xitoy harbiylari o‘rtasidagi to‘qnashuv voqealaridan ilhomlangan.\r\n\r\nFilmda Chitrangda Singh ham muhim rolni ijro etadi.\r\n\r\n### Premyera sanasi\r\n\r\nFilmning kinoteatrlardagi rasmiy namoyish sanasi 2026-yil 4-dekabr etib belgilangan.\r\n\r\n### Film ma'lumotlari\r\n\r\n- Film nomi: Maatrubhumi: May War Rest in Peace\r\n- Bosh rol: Salman Khan\r\n- Aktrisa: Chitrangda Singh\r\n- Rejissyor: Apoorva Lakhia\r\n- Janr: Action, Drama, War\r\n- Release date: 4 December 2026\r\n\r\nSalman Khan muxlislari ushbu filmni katta qiziqish bilan kutishmoqda.",
+    "img": "images/maatrubhumi-may-war-rest-in-peace-et00452351-1773748879.avif",
+    "category": 9,
+    "author": 1,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 53,
+    "created_at": "2026-11-13T05:28:34.882Z",
+    "updated_at": "2026-11-13T05:28:34.882Z",
+    "published_at": "2026-11-13T05:27:00Z",
+    "send_to_telegram": false,
+    "tags": [
+      10
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 9,
+  "fields": {
+    "title": "Toshkentda yangi metro bekati ochildi",
+    "slug": "toshkentda-yangi-metro-bekati",
+    "short_description": "Poytaxtda yangi metro bekati foydalanishga topshirildi.",
+    "body": "Bugun Toshkent shahrida yangi metro bekati rasman ochildi. Bekat yo'lovchilar uchun qulay sharoitlar bilan jihozlangan.",
+    "img": "",
+    "category": 1,
+    "author": 1,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 9,
+    "created_at": "2026-11-15T13:17:19.274Z",
+    "updated_at": "2026-11-15T13:17:19.274Z",
+    "published_at": "2026-11-15T18:00:00Z",
+    "send_to_telegram": false,
+    "tags": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 10,
+  "fields": {
+    "title": "Yevropa Ittifoqi Ruandada migrantlar uchun markaz ochmoqchi",
+    "slug": "yevropa-ittifoqi-ruandada-migrantlar-uchun-markaz",
+    "short_description": "Besh Yevropa davlati boshpana so'rovi rad etilgan migrantlarni Ruandaga yuborish bo'yicha sinov loyihasini e'lon qildi. Markaz 2027-yilda ochilishi kutilmoqda.",
+    "body": "Germaniya, Daniya, Avstriya, Gretsiya va Niderlandiya Ruandada migrantlar uchun birinchi markaz tashkil etish loyihasini ilgari surdi. Loyiha Venada bo'lib o'tgan matbuot anjumanida Avstriya kansleri Kristian Shtoker va Daniya bosh vaziri Mette Frederiksen tomonidan taqdim etildi.\r\n\r\nMarkazga boshpana so'rovi rad etilgan yoki Yevropa Ittifoqi hududida qolish huquqi bo'lmagan shaxslar yuboriladi. Sinov bosqichida har bir davlatdan 20 nafardan, jami 100 ga yaqin kishi qabul qilinishi rejalashtirilgan. Markazning 2027-yilda ishga tushishi kutilmoqda.\r\n\r\nRasmiylar bu tartib faqat barcha qonuniy imkoniyatlari tugagan shaxslarga qo'llanilishini ta'kidlamoqda. Biroq huquq himoyachilari Ruandadagi inson huquqlari bilan bog'liq holatlarni eslatib, loyihani tanqid qildi. Eslatib o'tamiz, Britaniyaning shunga o'xshash rejasi 2023-yilda mamlakat Oliy sudi tomonidan noqonuniy deb topilgan edi.",
+    "img": "images/Kigali-City-aerial-view-1024x597.jpg",
+    "category": 1,
+    "author": 2,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 0,
+    "created_at": "2026-11-17T05:17:22.250Z",
+    "updated_at": "2026-11-17T05:18:49.574Z",
+    "published_at": "2026-11-17T05:11:26Z",
+    "send_to_telegram": false,
+    "tags": [
+      15,
+      16
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 11,
+  "fields": {
+    "title": "Ilon Mask 70 metrlik yangi Starship haqida ma'lumot berdi",
+    "slug": "ilon-mask-70-metrlik-yangi-starship-haqida-malumot",
+    "short_description": "SpaceX'ning Starship V4 kemasi avvalgidan uzunroq bo'ladi, unga ko'proq yoqilg'i sig'adi va dvigatellar soni to'qqiztaga yetadi.",
+    "body": "lon Mask 16-noyabr kuni X ijtimoiy tarmog'ida SpaceX kompaniyasining Starship V4 kemasi haqida yangi ma'lumotlar bilan o'rtoqlashdi. Uning so'zlariga ko'ra, yangi kemaning uzunligi taxminan 70 metr bo'ladi — bu avvalgi versiyadan qariyb 40 foiz ko'p.\r\n\r\nKemaning yoqilg'i sig'imi ham 60 foizdan ortiqroq oshadi. Dvigatellar soni esa oltitadan to'qqiztaga ko'payadi: hozirgi uchta vakuum va uchta yer usti dvigateliga yana uchta vakuumda ishlaydigan Raptor qo'shiladi. Bu dvigatellar kema Super Heavy tezlatgichidan ajralgandan keyin ishga tushadi.\r\n\r\nShu bilan birga, Mask yangi dvigatellarning quvvati, kemaning yuk ko'tarish qobiliyati va birinchi parvoz sanasini hali aytmadi. Bu xabar 15-sinov parvozidan ko'p o'tmay keldi — o'shanda SpaceX orbitadan qaytgan Starship'ni ilk bor minoradagi maxsus tutqichlar bilan ushlab olgan edi.",
+    "img": "images/spacexrocketfeature.webp",
+    "category": 2,
+    "author": 1,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 1,
+    "created_at": "2026-11-17T05:23:39.728Z",
+    "updated_at": "2026-11-17T05:23:39.728Z",
+    "published_at": "2026-11-17T05:21:49Z",
+    "send_to_telegram": false,
+    "tags": [
+      17,
+      18,
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 12,
+  "fields": {
+    "title": "Mirziyoyev Ummonning yirik kompaniyalari rahbarlari bilan uchrashdi",
+    "slug": "mirziyoyev-ummon-kompaniyalari-uchrashuv",
+    "short_description": "Uchrashuvda konchilik, «yashil» energetika, logistika va qishloq xo'jaligi sohalaridagi qo'shma loyihalar muhokama qilindi.",
+    "body": "Prezident Shavkat Mirziyoyev Ummonga davlat tashrifi doirasida ushbu mamlakatning yetakchi biznes vakillarini qabul qildi. Delegatsiyaga Ummon Investitsiyalar agentligi prezidenti Abdusalom al-Murshidiy boshchilik qildi. Uchrashuvda Savdo-sanoat palatasi hamda SABCO Group, Voltamp Energy, Asyad Group, Zubair Corporation kabi kompaniyalar rahbarlari ishtirok etdi.\r\n\r\nTomonlar O'zbekiston–Ummon investitsiya kompaniyasining ustav kapitalini oshirish masalasini ko'rib chiqdi. Shuningdek, konchilik, «yashil» energetika, elektrotexnika, kimyo, shaharsozlik, transport-logistika, infratuzilma va qishloq xo'jaligi sohalarida qo'shma loyihalar muhokama qilindi.\r\n\r\nKelishuvlarni amalga oshirish uchun qo'shma ishchi guruh tuziladi va uning natijalari har chorakda ko'rib boriladi. Yangi tashkil etilayotgan O'zbekiston–Ummon ishbilarmonlar kengashi ikki davlat tadbirkorlari o'rtasida bevosita muloqotni yo'lga qo'yishi kutilmoqda.",
+    "img": "",
+    "category": 3,
+    "author": 2,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 0,
+    "created_at": "2026-11-17T05:27:02.823Z",
+    "updated_at": "2026-11-17T05:29:06.090Z",
+    "published_at": "2026-11-17T05:25:38Z",
+    "send_to_telegram": false,
+    "tags": [
+      23,
+      24,
+      25
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 13,
+  "fields": {
+    "title": "Robert Pattinson yangi Jeyms Bond bo'ladi",
+    "slug": "robert-pattinson-yangi-jeyms-bond-boladi",
+    "short_description": "Amazon MGM kompaniyasi agent 007 rolini britaniyalik aktyor Robert Pattinson ijro etishini rasman e'lon qildi.",
+    "body": "Amazon MGM Studios Bond seriyasining navbatdagi filmida bosh rolni Robert Pattinson ijro etishini tasdiqladi. Xabar agent 007 ning rasmiy X sahifasida e'lon qilindi. Pattinson 2006–2021-yillarda bu rolni o'ynagan Deniel Kreygning o'rnini egallaydi.\r\n\r\n40 yoshli aktyor Londonda tug'ilgan. U ilk bor «Garri Potter va olov kosasi» filmidagi Sedrik Diggori roli bilan tanilgan, keyinroq «Tenet» va «Betmen» filmlarida suratga tushgan. Rolga Aaron Teylor-Jonson, Nikolas Xolt va Kallum Terner ham nomzod bo'lgan edi. Pattinson bu rolni orzusining ushalishi deb atadi.\r\n\r\nBu rasmiy Bond seriyasining 26-filmi bo'ladi, uning nomi hali e'lon qilinmagan. Eslatib o'tamiz, franshiza ustidan ijodiy nazorat 2025-yil fevralida Amazon MGM Studios'ga o'tgan.",
+    "img": "images/VIP-cinema-seating-by-seatupturkey02.jpg",
+    "category": 4,
+    "author": 1,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 1,
+    "created_at": "2026-11-17T05:34:33.423Z",
+    "updated_at": "2026-11-17T05:34:33.423Z",
+    "published_at": "2026-11-17T05:30:56Z",
+    "send_to_telegram": false,
+    "tags": [
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 14,
+  "fields": {
+    "title": "Har bir maktabda kamida bitta sport to'garagi ochiladi",
+    "slug": "maktablarda-sport-togaragi-ochiladi",
+    "short_description": "Prezident qaroriga ko'ra maktablarda olimpiya sport turlari bo'yicha to'garaklar tashkil etiladi, 2027-yildan esa sport diplomlari elektron shaklda beriladi.",
+    "body": "Prezidentning 16-noyabrdagi «Sport sohasini raqamlashtirish va samarali boshqaruv tizimini yo'lga qo'yish chora-tadbirlari to'g'risida»gi qarori qabul qilindi. Unga ko'ra, har bir umumta'lim maktabida yakkakurash va jamoaviy olimpiya sport turlari bo'yicha kamida bittadan to'garak ochiladi.\r\n\r\nSport maktablari umumta'lim maktablariga biriktiriladi, jismoniy tarbiya o'qituvchilari faoliyati rivojlantiriladi. Bu ishlar «Maktabdan Sport akademiyasigacha» g'oyasi asosida amalga oshiriladi.\r\n\r\nShuningdek, 2027-yil 1-yanvardan musobaqa g'oliblari va sovrindorlariga QR-kodli diplom va sertifikatlar ERP sport tizimi orqali elektron shaklda beriladi. Respublika oliy sport mahorati maktablari negizida esa Olimpiya terma jamoalari markazi tashkil etiladi.",
+    "img": "images/Physiotherapy-Sessions-scaled.jpg",
+    "category": 5,
+    "author": 1,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 1,
+    "created_at": "2026-11-17T05:38:02.372Z",
+    "updated_at": "2026-11-17T05:38:02.372Z",
+    "published_at": "2026-11-17T05:36:25Z",
+    "send_to_telegram": false,
+    "tags": [
+      29,
+      30,
+      31
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 15,
+  "fields": {
+    "title": "Nogironligi bo'lganlar yiliga uch martagacha bepul reabilitatsiyadan o'tishi mumkin",
+    "slug": "nogironligi-bolganlar-bepul-reabilitatsiya",
+    "short_description": "Reabilitatsiya va protezlash markazlariga navbat asosida yo'llash bo'yicha yangi nizom tasdiqlandi. Barcha xizmatlar bepul ko'rsatiladi.",
+    "body": "Ijtimoiy himoya milliy agentligi va Sog'liqni saqlash vazirligining qo'shma qarori bilan nogironligi bo'lgan shaxslarni reabilitatsiya va protezlash markazlariga yo'llash tartibi tasdiqlandi. Hujjat 14-noyabr kuni rasman e'lon qilindi.\r\n\r\nNizomga ko'ra, nogironligi ma'lum muddatga belgilangan shaxslar yiliga 3 martagacha, muddatsiz belgilanganlar esa 2 martagacha ambulator (kunduzgi) xizmatdan foydalanishi mumkin. Statsionar davolanish birinchi guruh uchun har 6 oyda bir marta, ikkinchisi uchun yiliga bir marta beriladi.\r\n\r\nAmbulator xizmat bir oygacha, statsionar xizmat esa 12 kungacha davom etadi. Aniq hajm har bir insonning sog'lig'i va ehtiyojlariga qarab belgilanadi. Ariza ko'rib chiqish, yo'llanma berish va reabilitatsiya xizmatlarining o'zi bepul.",
+    "img": "images/images_5.jpg",
+    "category": 6,
+    "author": 2,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 0,
+    "created_at": "2026-11-17T05:40:55.562Z",
+    "updated_at": "2026-11-17T06:10:23.652Z",
+    "published_at": "2026-11-17T05:39:27Z",
+    "send_to_telegram": false,
+    "tags": [
+      32,
+      33,
+      34
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 16,
+  "fields": {
+    "title": "O'zbekiston aholisi 16 yilda qariyb 10 millionga ko'paydi",
+    "slug": "ozbekiston-aholisi-16-yilda-10-millionga-kopaydi",
+    "short_description": "Statistika qo'mitasi ma'lumotiga ko'ra, 2026-yil boshida mamlakat aholisi 39 milliondan oshdi.",
+    "body": "Milliy statistika qo'mitasi aholini ro'yxatga olish natijalari asosida 2010–2026-yillar uchun aholi sonini qayta hisobladi. Unga ko'ra, 2026-yil 1-yanvar holatiga O'zbekistonning doimiy aholisi 39 million 23,6 ming kishini tashkil etgan.\r\n\r\n2010-yil boshida bu ko'rsatkich 29,2 million edi. Demak, 16 yil ichida aholi 9,8 million kishiga yoki taxminan 33,6 foizga ko'paygan. Faqat 2025-yilning o'zida aholi 702 ming kishiga oshgan.\r\n\r\nQo'mita e'lon qilgan jadvalga ko'ra, aholi soni har yili muntazam ravishda o'sib borgan.",
+    "img": "images/tashbook-7212.jpg",
+    "category": 7,
+    "author": 2,
+    "status": "published",
+    "is_featured": false,
+    "views_count": 0,
+    "created_at": "2026-11-17T05:44:57.027Z",
+    "updated_at": "2026-11-17T05:44:57.027Z",
+    "published_at": "2026-11-17T05:43:04Z",
+    "send_to_telegram": false,
+    "tags": [
+      35,
+      36
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 17,
+  "fields": {
+    "title": "«Ramayana» kassada 12 kunda 790 crore rupiydan oshdi",
+    "slug": "ramayana-kassada-12-kunda-790-crore-rupiydan-oshdi",
+    "short_description": "Ranbir Kapur bosh rolni ijro etgan «Ramayana: 1-qism» filmi Hindistonda 12 kun ichida 792 crore rupiydan ortiq sof daromad keltirdi.",
+    "body": "Rejissyor Nitesh Tivari suratga olgan «Ramayana: 1-qism» filmi 5-noyabr kuni, Divali bayrami arafasida kinoteatrlarga chiqdi. Film birinchi kunning o'zida Hindistonda 64,85 crore rupiy sof daromad yig'di. Uchinchi kuni esa 150 crore chegarasidan o'tdi.\r\n\r\nSacnilk saytining hisobiga ko'ra, 12-kun (16-noyabr, dushanba) yakunida filmning Hindistondagi umumiy sof daromadi 792,6 crore rupiyga yetdi. Dam olish kunidan keyin kunlik tushum pasaygan bo'lsa-da, film hamon kassa yetakchilaridan biri bo'lib qolmoqda.\r\n\r\nFilm bir vaqtning o'zida besh tilda namoyish etilmoqda. Daromadning asosiy qismi hind tilidagi versiyaga to'g'ri keladi.",
+    "img": "images/images.jpg",
+    "category": 9,
+    "author": 2,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 7,
+    "created_at": "2026-11-17T05:52:21.448Z",
+    "updated_at": "2026-11-17T05:52:21.448Z",
+    "published_at": "2026-11-17T05:50:59Z",
+    "send_to_telegram": false,
+    "tags": [
+      10,
+      37,
+      38
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 18,
+  "fields": {
+    "title": "«Ramayana»ning ikkinchi qismi 2027-yil Divalida chiqadi",
+    "slug": "ramayana-ikkinchi-qism-2027-divali",
+    "short_description": "Prodyuser Namit Malxotraning ikki qismli loyihasi davom etmoqda. Ranbir Kapurning aytishicha, ikkinchi qism yarmigacha tayyor.",
+    "body": "Qadimiy hind dostoni asosida yaratilgan «Ramayana» ikki qismdan iborat loyiha. Birinchi qism 2026-yil Divali bayramida chiqdi, ikkinchisi esa bir yildan so'ng, 2027-yil Divalida chiqishi rejalashtirilgan.\r\n\r\nFilmda Ranbir Kapur Rama, Sai Pallavi Sita, Yash Ravana, Sanni Deol Xanuman, Ravi Dube esa Lakshmana rolini ijro etgan. Ranbir Kapur Rama obrazini karyerasidagi eng ma'noli rol deb atagan.\r\n\r\nAktyor yaqinda ikkinchi qismning taxminan yarmi tayyor ekanini aytdi. Uning fikricha, «Ramayana» dunyosi shu qadar keng-ki, hatto ikki qismli film ham uni to'liq qamrab ololmaydi.",
+    "img": "images/images_1.jpg",
+    "category": 9,
+    "author": 1,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 18,
+    "created_at": "2026-11-17T05:55:08.355Z",
+    "updated_at": "2026-11-17T05:55:08.355Z",
+    "published_at": "2026-11-17T05:53:18Z",
+    "send_to_telegram": false,
+    "tags": [
+      10,
+      37
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 19,
+  "fields": {
+    "title": "Mashhur Ramayana filmi O‘zbekiston kinoteatrlarida namoyish etilmoqda",
+    "slug": "ramayana-filmi-ozbekiston-kinoteatrlarida",
+    "short_description": "Hindistonning mashhur Ramayana dostoni asosida suratga olingan yangi film 12-noyabrdan O‘zbekiston kinoteatrlarida namoyish etila boshlandi. Film tomoshabinlarga qadimiy afsona, sarguzasht va jangovar sahnalarni taqdim etadi.",
+    "body": "Hindiston kinematografiyasining yangi yirik loyihalaridan biri bo‘lgan “Ramayana: Rise of a Legend” filmi O‘zbekiston kinoteatrlariga yetib keldi. Filmning mamlakatimizdagi premyerasi 2026-yil 12-noyabr kuni bo‘lib o‘tdi.\r\n\r\nFilm qadimgi Hindistonning mashhur “Ramayana” eposi asosida suratga olingan. Asarda shahzoda Rama va uning rafiqasi Sita hayoti hikoya qilinadi.\r\n\r\nSaroydagi fitnalar sabab Rama va Sita o‘z yurtlarini tark etib, surgunga ketishga majbur bo‘lishadi. Ularning hayoti jinlar hukmdori Ravana Sitani o‘g‘irlab ketishi bilan keskin o‘zgaradi. Shundan so‘ng Rama sevimli rafiqasini qutqarish uchun xavfli safarga otlanadi.\r\n\r\nFilm rejissyori Nitesh Tiwari hisoblanadi. Asosiy rollarni Ranbir Kapoor, Sai Pallavi, Yash va Sunny Deol ijro etgan.\r\n\r\nFilmning davomiyligi 195 daqiqani tashkil etadi. Tomoshabinlar uni O‘zbekistonning bir qator kinoteatrlarida tomosha qilishlari mumkin.\r\n\r\n“Ramayana” filmi hind kinosi muxlislari uchun noyabr oyining e'tiborga molik premyeralaridan biriga aylandi.",
+    "img": "images/ef553a1f-bf06-4b82-8b95-4238fc8e6b7f.png",
+    "category": 9,
+    "author": 2,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 8,
+    "created_at": "2026-11-17T06:02:51.421Z",
+    "updated_at": "2026-11-17T06:23:41.562Z",
+    "published_at": "2026-11-17T06:04:36Z",
+    "send_to_telegram": false,
+    "tags": [
+      10,
+      37
+    ]
+  }
+},
+{
+  "model": "newsuz.news",
+  "pk": 20,
+  "fields": {
+    "title": "«Betmen» kompozitori Hans Zimmer «Ramayana»ga musiqa yozdi",
+    "slug": "hans-zimmer-ramayanaga-musiqa-yozdi",
+    "short_description": "«Ramayana» filmi musiqasini ikki Oskar sovrindori yaratdi: Gollivud kompozitori Hans Zimmer va hind kompozitori A.R. Rahmon. Bu Zimmerning hind kinosidagi ilk ishi.",
+    "body": "Nitesh Tivarining «Ramayana» filmi uchun musiqani Hans Zimmer va A.R. Rahmon birgalikda yozdi. Zimmer «Qorong'u ritsar» (Betmen) trilogiyasi, «Arslon qirol», «Interstellar», «Debut» (Inception) va «Dyuna» kabi mashhur filmlarga yozgan musiqasi bilan tanilgan. «Ramayana» uning hind kinosidagi birinchi loyihasi bo'ldi.\r\n\r\nIkki kompozitorning maqsadi hind mumtoz musiqasini Zimmerning kinematografik orkestr uslubi bilan uyg'unlashtirish edi. Rahmonning aytishicha, ular film musiqasi ustida qariyb uch yarim yil ishlagan. U bu loyihani karyerasidagi eng katta va eng qiziqarli ish deb atadi.\r\n\r\nFilmning saundtrekidan bir nechta trek oldindan e'lon qilingan edi. Jumladan, aprel oyida «Rama Theme», avgustda esa treyler musiqasi chiqdi. Film 5-noyabrda chiqishidan ikki kun oldin Rahmon ijtimoiy tarmoqda musiqa turli dunyolarni birlashtira olishini yozdi.",
+    "img": "images/8e7aeca7-7940-4b13-a51e-829d93dac610.png",
+    "category": 9,
+    "author": 1,
+    "status": "published",
+    "is_featured": true,
+    "views_count": 417,
+    "created_at": "2026-11-17T06:20:16.198Z",
+    "updated_at": "2026-11-17T11:52:28.007Z",
+    "published_at": "2026-11-17T06:17:26Z",
+    "send_to_telegram": true,
+    "tags": [
+      8,
+      10,
+      37,
+      39,
+      40
+    ]
+  }
+},
+{
+  "model": "newsuz.heroblog",
+  "pk": 1,
+  "fields": {
+    "main_category": "Eng so'nggi habarlar | Bollywood  olami",
+    "title": "Lightnews",
+    "subtitle": "Bizdagi eng so'nggi yangiliklarni oq'ing",
+    "short_description": "Dubyo va bollywood bo'yicha engg so'nggi habarlar faqat bizda",
+    "description": "Biz nafaqat dunyo habarini balkim Bollywood habarlarini bilan ham sizni habardor qilamiz.Eng so'nggi habarlar,Bollywood olamidagi eng so'nggi filmlar,Dunyo bo'yicha eng so'nggi habarlar"
+  }
+},
+{
+  "model": "newsuz.savednews",
+  "pk": 1,
+  "fields": {
+    "author": 2,
+    "news": 1,
+    "created_at": "2026-11-14T10:53:27.206Z"
+  }
+},
+{
+  "model": "newsuz.savednews",
+  "pk": 2,
+  "fields": {
+    "author": 1,
+    "news": 8,
+    "created_at": "2026-11-16T06:56:43.907Z"
+  }
+},
+{
+  "model": "newsuz.savednews",
+  "pk": 10,
+  "fields": {
+    "author": 2,
+    "news": 7,
+    "created_at": "2026-11-16T07:04:15.634Z"
+  }
+},
+{
+  "model": "newsuz.savednews",
+  "pk": 11,
+  "fields": {
+    "author": 2,
+    "news": 8,
+    "created_at": "2026-11-16T07:26:39.774Z"
+  }
+},
+{
+  "model": "newsuz.savednews",
+  "pk": 12,
+  "fields": {
+    "author": 1,
+    "news": 17,
+    "created_at": "2026-11-17T05:52:44.341Z"
+  }
+},
+{
+  "model": "newsuz.savednews",
+  "pk": 13,
+  "fields": {
+    "author": 1,
+    "news": 19,
+    "created_at": "2026-11-17T06:26:36.570Z"
+  }
+},
+{
+  "model": "newsuz.savednews",
+  "pk": 14,
+  "fields": {
+    "author": 2,
+    "news": 20,
+    "created_at": "2026-11-19T02:46:46.419Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 1,
+  "fields": {
+    "author": 2,
+    "news": 1,
+    "comment": "Waiting for",
+    "status": "approved",
+    "created_at": "2026-11-16T03:26:46.272Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 2,
+  "fields": {
+    "author": 2,
+    "news": 8,
+    "comment": "Waiting for Salman Bhai ki film",
+    "status": "approved",
+    "created_at": "2026-11-16T04:07:25.871Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 3,
+  "fields": {
+    "author": 2,
+    "news": 7,
+    "comment": "Shah Rukh Khan is the best actor",
+    "status": "approved",
+    "created_at": "2026-11-16T06:49:45.922Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 4,
+  "fields": {
+    "author": 1,
+    "news": 8,
+    "comment": "4-dekabr tezroq kelsin",
+    "status": "approved",
+    "created_at": "2026-11-16T06:53:15.927Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 5,
+  "fields": {
+    "author": 2,
+    "news": 7,
+    "comment": "Super",
+    "status": "approved",
+    "created_at": "2026-11-16T07:06:35.089Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 6,
+  "fields": {
+    "author": 1,
+    "news": 9,
+    "comment": "Rasmi yo'q ekan",
+    "status": "approved",
+    "created_at": "2026-11-16T07:21:04.425Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 7,
+  "fields": {
+    "author": 1,
+    "news": 5,
+    "comment": "Bollywooddan ko'proq qo'yilat",
+    "status": "rejected",
+    "created_at": "2026-11-16T07:22:07.950Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 8,
+  "fields": {
+    "author": 1,
+    "news": 19,
+    "comment": "The best movie in bollywood that I have ever seen",
+    "status": "approved",
+    "created_at": "2026-11-17T06:27:19.755Z"
+  }
+},
+{
+  "model": "newsuz.comment",
+  "pk": 9,
+  "fields": {
+    "author": 1,
+    "news": 20,
+    "comment": "Ramayana is the best movie and highest movie in India",
+    "status": "approved",
+    "created_at": "2026-11-18T02:52:50.553Z"
+  }
+},
+{
+  "model": "newsuz.telegramlog",
+  "pk": 1,
+  "fields": {
+    "news": 1,
+    "is_success": false,
+    "error_msg": "Forbidden: bot is not a member of the channel chat",
+    "send_at": "2026-11-16T16:38:49.669Z"
+  }
+},
+{
+  "model": "newsuz.telegramlog",
+  "pk": 2,
+  "fields": {
+    "news": 1,
+    "is_success": true,
+    "error_msg": "",
+    "send_at": "2026-11-16T16:45:18.907Z"
+  }
+},
+{
+  "model": "newsuz.telegramlog",
+  "pk": 3,
+  "fields": {
+    "news": 20,
+    "is_success": true,
+    "error_msg": "",
+    "send_at": "2026-11-17T11:52:31.828Z"
+  }
+},
+{
+  "model": "newsuz.telegramlog",
+  "pk": 4,
+  "fields": {
+    "news": 20,
+    "is_success": true,
+    "error_msg": "",
+    "send_at": "2026-11-17T11:52:31.888Z"
+  }
+},
+{
+  "model": "newsuz.telegramlog",
+  "pk": 5,
+  "fields": {
+    "news": 20,
+    "is_success": true,
+    "error_msg": "",
+    "send_at": "2026-11-17T11:52:38.089Z"
+  }
+}
+]

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="uz">
+<head>
+ {% load static %}
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Sahifa topilmadi | LightNews</title>
+ <meta name="robots" content="noindex">
+ <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+<body>
+ <main>
+ <section class="page-intro">
+ <div class="container">
+ <div class="eyebrow">404</div>
+ <h1>Sahifa topilmadi<span style="color:var(--red)">.</span></h1>
+ <p>Siz izlagan sahifa mavjud emas yoki ko'chirilgan.</p>
+ <a class="btn btn-primary" href="{% url 'home' %}">Bosh sahifaga qaytish</a>
+ </div>
+ </section>
+ </main>
+</body>
+</html>
